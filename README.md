@@ -9,6 +9,14 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
   - Privacy Policy (English - Recommended for Store Review): `https://madcodelab.github.io/Policy/privacy/zoovoice.html`
   - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/zoovoice-vi.html`
   - Terms of Service: `https://madcodelab.github.io/Policy/terms/zoovoice.html`
+- **Puzzlify**:
+  - Privacy Policy (English): `https://madcodelab.github.io/Policy/privacy/puzzlify.html`
+  - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/puzzlify-vi.html`
+  - Terms of Service: `https://madcodelab.github.io/Policy/terms/puzzlify.html`
+- **MadGame**:
+  - Privacy Policy (English): `https://madcodelab.github.io/Policy/privacy/madgame.html`
+  - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/madgame-vi.html`
+  - Terms of Service: `https://madcodelab.github.io/Policy/terms/madgame.html`
 - **AdMob app-ads.txt**: `https://madcodelab.github.io/Policy/app-ads.txt`
 
 ## Deployment via GitHub Pages
