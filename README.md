@@ -17,6 +17,11 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
   - Privacy Policy (English): `https://madcodelab.github.io/Policy/privacy/madgame.html`
   - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/madgame-vi.html`
   - Terms of Service: `https://madcodelab.github.io/Policy/terms/madgame.html`
+- **HeyStranger**:
+  - Privacy Policy (English - Recommended for Store Review): `https://madcodelab.github.io/Policy/privacy/heystranger.html`
+  - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/heystranger-vi.html`
+  - Terms of Service (English): `https://madcodelab.github.io/Policy/terms/heystranger.html`
+  - Terms of Service (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/heystranger-vi.html`
 - **AdMob app-ads.txt**: `https://madcodelab.github.io/Policy/app-ads.txt`
 
 ## Deployment via GitHub Pages
