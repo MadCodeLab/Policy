@@ -22,6 +22,11 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
   - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/heystranger-vi.html`
   - Terms of Service (English): `https://madcodelab.github.io/Policy/terms/heystranger.html`
   - Terms of Service (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/heystranger-vi.html`
+- **Magic Instrument**:
+  - Privacy Policy (English): `https://madcodelab.github.io/Policy/privacy/magicinstrument.html`
+  - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/magicinstrument-vi.html`
+  - Terms of Service (English): `https://madcodelab.github.io/Policy/terms/magicinstrument.html`
+  - Terms of Service (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/magicinstrument-vi.html`
 - **AdMob app-ads.txt**: `https://madcodelab.github.io/Policy/app-ads.txt`
 
 ## Deployment via GitHub Pages
