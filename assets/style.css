@@ -39,8 +39,11 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
   background-color: var(--bg-page);
   color: var(--ink);
   font-family: var(--font-sans);
@@ -54,6 +57,8 @@ a {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.15s ease;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 a:hover {
@@ -62,6 +67,7 @@ a:hover {
 }
 
 .page {
+  width: 100%;
   max-width: 920px;
   margin: 0 auto;
   padding: 32px 20px 64px;
@@ -73,16 +79,8 @@ a:hover {
   border-radius: var(--radius-lg);
   padding: 36px 32px;
   box-shadow: var(--shadow-sm);
-}
-
-@media (max-width: 640px) {
-  .page {
-    padding: 16px 12px 40px;
-  }
-  .panel {
-    padding: 24px 18px;
-    border-radius: var(--radius-md);
-  }
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .top-bar {
@@ -103,6 +101,7 @@ a:hover {
 
 .lang-switch {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 6px;
   background: var(--bg-subtle);
   padding: 4px;
@@ -118,6 +117,7 @@ a:hover {
   font-weight: 600;
   color: var(--ink-secondary);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .lang-switch a.active {
@@ -133,6 +133,7 @@ h1 {
   letter-spacing: -0.02em;
   line-height: 1.25;
   margin: 0 0 8px;
+  word-break: break-word;
 }
 
 h2 {
@@ -143,6 +144,7 @@ h2 {
   margin: 32px 0 12px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--line);
+  word-break: break-word;
 }
 
 h3 {
@@ -150,11 +152,13 @@ h3 {
   font-weight: 700;
   color: var(--ink);
   margin: 20px 0 8px;
+  word-break: break-word;
 }
 
 p {
   margin: 0 0 14px;
   color: var(--ink-secondary);
+  word-break: break-word;
 }
 
 .lead {
@@ -183,6 +187,8 @@ p {
   font-weight: 600;
   padding: 4px 10px;
   border-radius: 20px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .badge-green {
@@ -209,6 +215,7 @@ p {
   padding: 16px 20px;
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   margin: 18px 0;
+  word-break: break-word;
 }
 
 .callout.success {
@@ -227,6 +234,8 @@ p {
 
 table {
   width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   margin: 18px 0 24px;
   font-size: 15px;
@@ -240,13 +249,19 @@ th, td {
   text-align: left;
   vertical-align: top;
   border-bottom: 1px solid var(--line);
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 th {
   background: #f8fafc;
   font-weight: 600;
   color: var(--ink);
-  width: 32%;
+  width: 34%;
+}
+
+td {
+  width: 66%;
 }
 
 tr:last-child td {
@@ -261,6 +276,7 @@ ul, ol {
 
 li {
   margin-bottom: 6px;
+  word-break: break-word;
 }
 
 code {
@@ -271,6 +287,9 @@ code {
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
   color: #c026d3;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .apps-grid {
@@ -289,6 +308,7 @@ code {
   text-decoration: none;
   box-shadow: var(--shadow-sm);
   transition: all 0.2s ease;
+  word-break: break-word;
 }
 
 .app-card:hover {
@@ -318,7 +338,8 @@ code {
 .app-card-links {
   margin-top: 10px;
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
   font-size: 13px;
 }
 
@@ -328,6 +349,7 @@ code {
   border-radius: var(--radius-md);
   padding: 20px;
   margin: 20px 0;
+  word-break: break-word;
 }
 
 .checklist ul {
@@ -341,4 +363,108 @@ code {
   text-align: center;
   font-size: 13px;
   color: var(--ink-muted);
+  word-break: break-word;
+}
+
+/* Mobile & Tablet Responsive Enhancements */
+@media (max-width: 640px) {
+  .page {
+    padding: 16px 12px 40px;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .panel {
+    padding: 20px 14px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin: 24px 0 10px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+
+  /* Table becomes clean stacked card rows on mobile */
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    border-radius: var(--radius-sm);
+    margin: 14px 0 20px;
+  }
+
+  tr {
+    border-bottom: 1px solid var(--line);
+    padding: 8px 10px;
+  }
+
+  tr:last-child {
+    border-bottom: none;
+  }
+
+  th {
+    width: 100% !important;
+    padding: 4px 0 2px;
+    background: transparent;
+    font-size: 12px;
+    color: var(--ink-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: none;
+  }
+
+  td {
+    width: 100% !important;
+    padding: 0 0 4px;
+    border-bottom: none;
+    font-size: 14px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .app-card-links {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .badges-bar {
+    gap: 6px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .top-bar {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+  }
+
+  .breadcrumb {
+    font-size: 13px;
+  }
+
+  .lang-switch a {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+
+  .apps-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
