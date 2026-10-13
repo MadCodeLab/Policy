@@ -86,19 +86,24 @@
         Ứng dụng sử dụng quyền thông báo (<code>POST_NOTIFICATIONS</code> trên Android 13+) nhằm mục đích duy nhất là gửi các lời nhắc nhở học tập thân thiện định kỳ cho bé. Chúng tôi không gửi quảng cáo tiếp thị bên ngoài qua thông báo đẩy. Phụ huynh có thể bật hoặc tắt thông báo này bất cứ lúc nào trong Cài đặt hệ thống của điện thoại.
       </p>
 
-      <h2>4. Chính Sách Quảng Cáo An Toàn (Google AdMob Trong Families Policy)</h2>
+      <h2>4. Chính Sách Quảng Cáo An Toàn (Google AdMob & Mạng Trung Gian Appodeal)</h2>
       <p>
-        Trong các phiên bản có hiển thị quảng cáo hỗ trợ kinh phí phát triển, Voice Zoo sử dụng bộ SDK chính thức <strong>Google Mobile Ads (AdMob)</strong> với các cấu hình bảo vệ trẻ em nghiêm ngặt nhất:
+        Trong các phiên bản có hiển thị quảng cáo nhằm hỗ trợ kinh phí vận hành, Voice Zoo tích hợp các bộ SDK quảng cáo chính thức từ <strong>Google Mobile Ads (AdMob)</strong> và nền tảng hòa giải quảng cáo <strong>Appodeal (Appodeal Stack Mediation)</strong>. MadCodeLab áp dụng nghiêm ngặt các tiêu chuẩn bảo vệ gia đình và trẻ em trên toàn bộ hệ thống:
       </p>
       <ul>
-        <li><strong>Chỉ Định Dành Cho Trẻ Em:</strong> Mọi yêu cầu quảng cáo đều được kích hoạt cờ <code>tagForChildDirectedTreatment = true</code> và <code>tagForUnderAgeOfConsent = true</code>.</li>
+        <li><strong>Chỉ Định Dành Cho Trẻ Em:</strong> Mọi yêu cầu quảng cáo đều được kích hoạt cờ <code>tagForChildDirectedTreatment = true</code> và <code>tagForUnderAgeOfConsent = true</code> tuân thủ chuẩn COPPA, GDPR-K và Chính sách Gia đình của Google Play.</li>
         <li><strong>Giới Hạn Nội Dung Hạng G:</strong> Chúng tôi thiết lập <code>maxAdContentRating = G</code>, đảm bảo 100% quảng cáo hiển thị đều phù hợp với mọi lứa tuổi, đặc biệt là trẻ mầm non và học sinh nhỏ tuổi.</li>
         <li><strong>Tuyệt Đối Không Quảng Cáo Theo Dõi Hành Vi:</strong> Không thu thập dữ liệu hành vi, không theo dõi thói quen duyệt web, không quảng cáo bám đuổi (retargeting) và không theo dõi qua các ứng dụng khác (no cross-app tracking).</li>
-        <li><strong>Không Thu Thập Mã Định Danh Quảng Cáo Cá Nhân:</strong> IDFA (iOS) hoặc GAID (Android) không được sử dụng để định danh trẻ em.</li>
+        <li><strong>Địa Chỉ IP & Vị Trí Địa Lý Khái Quát:</strong> Các SDK quảng cáo (Appodeal và Google AdMob) có thể thu thập địa chỉ IP của thiết bị nhằm mục đích duy nhất là ước tính vị trí địa lý khái quát (ở cấp quốc gia và thành phố, không dùng GPS chính xác) để phân phối quảng cáo theo ngữ cảnh khu vực, kiểm tra kết nối mạng và phòng chống gian lận hiển thị.</li>
+        <li><strong>Mã Định Danh Quảng Cáo (Advertising IDs):</strong> Các mã định danh kỹ thuật (như Google Advertising ID / GAID trên Android, và IDFA trên iOS theo sự cho phép của bạn qua App Tracking Transparency) có thể được Appodeal, Google AdMob và các mạng đối tác được ủy quyền xử lý tạm thời cho mục đích vận hành kỹ thuật, chống gian lận, báo cáo chẩn đoán và giới hạn tần suất hiển thị (frequency capping) theo tiêu chuẩn bảo vệ trẻ em. Chúng tuyệt đối không dùng để định danh hay theo dõi trẻ em trên các ứng dụng hoặc trang web của bên thứ ba.</li>
       </ul>
       <p>
-        Dữ liệu kỹ thuật do Google AdMob xử lý chỉ bao gồm các tín hiệu cần thiết để phân phối quảng cáo theo ngữ cảnh, chống gian lận hiển thị và giới hạn tần suất hiển thị theo <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Chính sách quyền riêng tư của Google</a>.
+        Để tìm hiểu chi tiết về cách thức các đối tác dịch vụ của chúng tôi xử lý dữ liệu, phụ huynh có thể tham khảo chính sách chính thức của các bên:
       </p>
+      <ul>
+        <li><a href="https://www.appodeal.com/privacy-policy" target="_blank" rel="noopener"><strong>Chính sách quyền riêng tư của Appodeal</strong> (https://www.appodeal.com/privacy-policy)</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener"><strong>Chính sách quyền riêng tư của Google</strong></a> &bull; <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener">Công bố dữ liệu Google Mobile Ads trên Google Play</a></li>
+      </ul>
 
       <h2>5. Cổng Bảo Vệ Phụ Huynh (Parental Gate)</h2>
       <p>
@@ -132,13 +137,13 @@
           </tr>
           <tr>
             <td><strong>Vị trí địa lý</strong></td>
-            <td>Vị trí GPS chính xác</td>
-            <td><strong>Không thu thập.</strong> Ứng dụng không yêu cầu quyền định vị GPS.</td>
+            <td>Vị trí khái quát (từ địa chỉ IP)</td>
+            <td><strong>Quảng cáo ngữ cảnh & Phòng chống gian lận.</strong> Ứng dụng không yêu cầu quyền định vị GPS chính xác. Vị trí khái quát (cấp quốc gia/vùng từ địa chỉ IP) có thể được các đối tác quảng cáo (Google AdMob, Appodeal) xử lý tạm thời phục vụ phân phối khu vực và phòng chống gian lận.</td>
           </tr>
           <tr>
             <td><strong>Mã định danh thiết bị</strong></td>
-            <td>Device ID, Advertising ID</td>
-            <td><strong>Chỉ phục vụ kỹ thuật SDK.</strong> Google AdMob xử lý tạm thời phục vụ chống gian lận và giới hạn tần suất hiển thị theo chuẩn gia đình.</td>
+            <td>Địa chỉ IP, Device ID, Advertising ID (GAID / IDFA)</td>
+            <td><strong>Chỉ phục vụ kỹ thuật SDK & Trung gian quảng cáo.</strong> Được Google AdMob, Appodeal và các mạng liên kết xử lý tạm thời phục vụ chống gian lận, chẩn đoán kỹ thuật và giới hạn tần suất hiển thị theo chuẩn gia đình.</td>
           </tr>
           <tr>
             <td><strong>Hiệu năng & Chẩn đoán</strong></td>
@@ -148,7 +153,18 @@
         </tbody>
       </table>
 
-      <h2>7. Quyền Của Phụ Huynh & Yêu Cầu Xóa Dữ Liệu</h2>
+      <h2>7. Dịch Vụ Bên Thứ Ba & Đối Tác Vận Hành</h2>
+      <p>
+        Ứng dụng có thể giao tiếp với các bộ SDK của bên thứ ba đáng tin cậy phục vụ vận hành chức năng:
+      </p>
+      <ul>
+        <li><strong>Appodeal (Appodeal, Inc.):</strong> Nền tảng trung gian quảng cáo (ad mediation) phục vụ phân phối quảng cáo phù hợp với chuẩn gia đình và kiểm soát tần suất hiển thị. Dữ liệu kỹ thuật được xử lý bao gồm địa chỉ IP, mã định danh quảng cáo (khi được phép) và thông số kỹ thuật thiết bị theo <a href="https://www.appodeal.com/privacy-policy" target="_blank" rel="noopener">Chính sách quyền riêng tư của Appodeal</a>.</li>
+        <li><strong>Google Play Services & Google AdMob:</strong> Phân phối quảng cáo hạng G theo ngữ cảnh, kiểm tra tính toàn vẹn ứng dụng và phân phối (<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Chính sách Google</a>).</li>
+        <li><strong>Firebase Cloud Messaging (Google LLC):</strong> Hỗ trợ gửi các lời nhắc học tập thân thiện tùy chọn.</li>
+        <li><strong>Hạ tầng MadCodeLab:</strong> Máy chủ nội bộ (<code>api.madcodelab.cloud</code>) bảo vệ bằng chữ ký HMAC dùng để kiểm tra cấu hình từ xa và độ ổn định hệ thống mà không xử lý dữ liệu người dùng.</li>
+      </ul>
+
+      <h2>8. Quyền Của Phụ Huynh & Yêu Cầu Xóa Dữ Liệu</h2>
       <p>
         Các bậc phụ huynh có toàn quyền kiểm tra, yêu cầu giải đáp hoặc yêu cầu xóa bất kỳ dữ liệu nào. Do MadCodeLab không lưu trữ hồ sơ người dùng trên máy chủ, toàn bộ tiến trình học và tranh vẽ nằm trực tiếp trên máy của quý phụ huynh. Phụ huynh có thể xóa hoàn toàn dữ liệu bằng cách:
       </p>
@@ -166,7 +182,7 @@
         <p>Thời gian phản hồi: Chúng tôi cam kết tiếp nhận và phản hồi trong vòng 48 giờ làm việc.</p>
       </div>
 
-      <h2>8. Thay Đổi Chính Sách</h2>
+      <h2>9. Thay Đổi Chính Sách</h2>
       <p>
         Chúng tôi có thể cập nhật chính sách này khi có nâng cấp tính năng mới hoặc có sự điều chỉnh trong quy định pháp luật quốc tế. Ngày có hiệu lực ở đầu trang sẽ được thay đổi khi có cập nhật. Chúng tôi khuyến khích phụ huynh theo dõi định kỳ trang này.
       </p>
