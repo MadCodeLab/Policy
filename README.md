@@ -43,10 +43,14 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
 
 ## Deployment via GitHub Pages
 
-1. Navigate to the repository settings on GitHub: `https://github.com/MadCodeLab/Policy/settings/pages`.
-2. Under **Build and deployment** → **Source**: Select **Deploy from a branch**.
-3. Under **Branch**: Select `main` and folder `/ (root)`.
-4. Click **Save**. The website will be live at `https://madcodelab.github.io/Policy/`.
+GitHub Pages for `MadCodeLab/Policy` serves directly from the **`gh-pages`** branch at `/ (root)`.
+
+After committing changes on `main`, merge `main` into `gh-pages` and push both branches so GitHub Pages publishes immediately:
+
+```bash
+git push origin main
+git checkout gh-pages && git merge main --no-edit && git push origin gh-pages && git checkout main
+```
 
 > `.nojekyll` is included at the repository root to bypass Jekyll processing and ensure all static assets are served verbatim.
 
