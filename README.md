@@ -32,6 +32,13 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
   - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/strongestcharacter-vi.html`
   - Terms of Service (English): `https://madcodelab.github.io/Policy/terms/strongestcharacter.html`
   - Terms of Service (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/strongestcharacter-vi.html`
+- **MadMonsters** (`com.h2qglobal.madmonsters`):
+  - Privacy Policy (English - Recommended for Store Review): `https://madcodelab.github.io/Policy/privacy/madmonsters.html`
+  - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/madmonsters-vi.html`
+  - Account & Data Deletion Portal (English - Google Play Data Safety URL): `https://madcodelab.github.io/Policy/privacy/madmonsters-delete-account.html`
+  - Account & Data Deletion Portal (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/madmonsters-delete-account-vi.html`
+  - Terms of Service & EULA (English): `https://madcodelab.github.io/Policy/terms/madmonsters.html`
+  - Terms of Service & EULA (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/madmonsters-vi.html`
 - **AdMob app-ads.txt**: `https://madcodelab.github.io/Policy/app-ads.txt`
 
 ## Deployment via GitHub Pages
@@ -60,6 +67,16 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
 - **Privacy Policy URL**: `https://madcodelab.github.io/Policy/privacy/zoovoice.html`.
 - **App Privacy Questionnaire**: All data handled is not linked to user identity; no tracking across third-party apps.
 - **Kids Category (Guideline 1.3 & 5.1.4)**: Parental Gate is active on all outgoing actions and settings; ads are contextual and strictly G-rated.
+
+### MadMonsters (`com.h2qglobal.madmonsters` — 12+ / Teen Online RPG)
+- **Google Play Store & Apple App Store Privacy Policy URL**: `https://madcodelab.github.io/Policy/privacy/madmonsters.html`
+- **Google Play Data Safety — Delete Account URL**: `https://madcodelab.github.io/Policy/privacy/madmonsters-delete-account.html`
+- **Terms of Service & EULA URL**: `https://madcodelab.github.io/Policy/terms/madmonsters.html`
+- **Data Safety / App Privacy Declarations**:
+  - **Personal Info**: Email address, Trainer Display Name, and internal User ID collected for App Functionality & Account Management (encrypted in transit via TLS 1.3, not shared with third parties, user-deletable).
+  - **App Activity / Gameplay Progress**: Monster roster, inventory, Arena/Boss/Guild progress stored on authoritative servers (`api-madmonsters.madcodelab.cloud`).
+  - **Financial Info (If IAP Enabled)**: Purchase history / SKU receipt tokens only (payment cards handled solely by Google Play Billing / Apple StoreKit).
+  - **Permissions & Tracking**: `INTERNET` only; zero Camera/Microphone/Location/Contacts permissions; zero behavioral ad tracking (no IDFA/GAID cross-app tracking).
 
 ## AdMob Verification
 `app-ads.txt` contains:
