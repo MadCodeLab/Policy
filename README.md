@@ -2,7 +2,7 @@
 
 Official static privacy policies, terms of service, and app-ads.txt publisher declarations for applications developed by **MadCodeLab**.
 
-## Public URLs (GitHub Pages)
+## Public URLs
 
 - **Portal Home**: `https://madcodelab.github.io/Policy/`
 - **Voice Zoo (ZooVoice)**:
@@ -39,7 +39,12 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
   - Account & Data Deletion Portal (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/madmonsters-delete-account-vi.html`
   - Terms of Service & EULA (English): `https://madcodelab.github.io/Policy/terms/madmonsters.html`
   - Terms of Service & EULA (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/madmonsters-vi.html`
-- **AdMob app-ads.txt**: `https://madcodelab.github.io/Policy/app-ads.txt`
+- **BoostBeat** (`com.h2qglobal.boostbeat`):
+  - Privacy Policy (English): `https://madcodelab.github.io/Policy/privacy/boostbeat.html`
+  - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/boostbeat-vi.html`
+  - Terms of Service (English): `https://madcodelab.github.io/Policy/terms/boostbeat.html`
+  - Terms of Service (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/boostbeat-vi.html`
+- [AdMob app-ads.txt for all apps](https://h2qglobal.com/app-ads.txt)
 
 ## Deployment via GitHub Pages
 
@@ -56,7 +61,7 @@ git checkout gh-pages && git merge main --no-edit && git push origin gh-pages &&
 
 ## Google Play & Apple App Store Checklist
 
-### Google Play Console
+### Voice Zoo (ZooVoice) on Google Play
 - **Privacy Policy URL**: Fill with `https://madcodelab.github.io/Policy/privacy/zoovoice.html`.
 - **In-App Link**: Ensure the same URL is accessible via the app settings or about screen.
 - **Developer Name**: Must align with `MadCodeLab`.
@@ -67,7 +72,7 @@ git checkout gh-pages && git merge main --no-edit && git push origin gh-pages &&
   - Google AdMob: Technical device IDs and diagnostics handled with child-directed treatment (Rating G, no behavioral profiling).
 - **Target Audience**: Families and Children under 13.
 
-### Apple App Store Connect
+### Voice Zoo (ZooVoice) on the App Store
 - **Privacy Policy URL**: `https://madcodelab.github.io/Policy/privacy/zoovoice.html`.
 - **App Privacy Questionnaire**: All data handled is not linked to user identity; no tracking across third-party apps.
 - **Kids Category (Guideline 1.3 & 5.1.4)**: Parental Gate is active on all outgoing actions and settings; ads are contextual and strictly G-rated.
@@ -82,9 +87,19 @@ git checkout gh-pages && git merge main --no-edit && git push origin gh-pages &&
   - **Financial Info (If IAP Enabled)**: Purchase history / SKU receipt tokens only (payment cards handled solely by Google Play Billing / Apple StoreKit).
   - **Permissions & Tracking**: `INTERNET` only; zero Camera/Microphone/Location/Contacts permissions; zero behavioral ad tracking (no IDFA/GAID cross-app tracking).
 
+### BoostBeat (`com.h2qglobal.boostbeat`)
+
+- Use `https://madcodelab.github.io/Policy/privacy/boostbeat.html` as the Privacy Policy URL in App Store Connect and Play Console. Link to it from the game's settings or about screen. [Apple App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/#privacy) · [Google Play User Data policy](https://support.google.com/googleplay/android-developer/answer/10144311)
+- BoostBeat saves progress and settings on the device and supports play without a game account. Complete App Privacy and Data safety for the submitted build on each platform. For builds with ads or purchases enabled, check the bundled SDKs, privacy and consent settings, and purchase information the game receives. [Apple App Privacy Details](https://developer.apple.com/app-store/app-privacy-details/) · [AdMob disclosure for iOS](https://developers.google.com/admob/ios/privacy/data-disclosure) · [AdMob disclosure for Android](https://developers.google.com/admob/android/privacy/play-data-disclosure)
+- The publisher ID for BoostBeat's iOS AdMob configuration is `pub-5132455808960555`. [Shared app-ads.txt](https://h2qglobal.com/app-ads.txt)
+
 ## AdMob Verification
-`app-ads.txt` contains:
+
+Use `https://h2qglobal.com` as the developer website in the store listing for apps that use the shared declaration. AdMob looks for the file at the root of the developer website hostname. [AdMob app-ads.txt setup](https://support.google.com/admob/answer/9363762)
+
+The repository's `app-ads.txt` lists the publisher entries for the shared declaration.
+
 ```text
 google.com, pub-1133420470079320, DIRECT, f08c47fec0942fa0
+google.com, pub-5132455808960555, DIRECT, f08c47fec0942fa0
 ```
-For crawler verification, ensure the domain listed in your Google Play Store / App Store listing points to or redirects to this verified root file.
