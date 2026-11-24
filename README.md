@@ -44,6 +44,10 @@ Official static privacy policies, terms of service, and app-ads.txt publisher de
   - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/boostbeat-vi.html`
   - Terms of Service (English): `https://madcodelab.github.io/Policy/terms/boostbeat.html`
   - Terms of Service (Tiếng Việt): `https://madcodelab.github.io/Policy/terms/boostbeat-vi.html`
+- **TwinBeat: Neon Hop** (`com.h2qglobal.twinbeat`):
+  - [App Store listing](https://apps.apple.com/us/app/twinbeat-neon-hop/id6835357599)
+  - Privacy Policy (English): `https://madcodelab.github.io/Policy/privacy/twinbeat.html`
+  - Privacy Policy (Tiếng Việt): `https://madcodelab.github.io/Policy/privacy/twinbeat-vi.html`
 - **Sky Steps** (`com.h2qglobal.skysteps`)
   - [Privacy Policy (English)](https://madcodelab.github.io/Policy/privacy/skysteps.html)
   - [Chính sách quyền riêng tư (Tiếng Việt)](https://madcodelab.github.io/Policy/privacy/skysteps-vi.html)
@@ -111,6 +115,10 @@ git checkout gh-pages && git merge main --no-edit && git push origin gh-pages &&
 - The game stores progress and settings locally and uses AdMob on mobile. The iOS build enables the one-time StoreKit purchase to remove forced ads. The current Android configuration uses test ad IDs and shows a purchase preview with billing disabled. Complete App Privacy and Data safety for the submitted build. [iOS AdMob disclosures](https://developers.google.com/admob/ios/privacy/data-disclosure) · [Android AdMob disclosures](https://developers.google.com/admob/android/privacy/play-data-disclosure)
 - Provide an in-game control to change ad consent if the Google User Messaging Platform requires one. [Google UMP setup](https://developers.google.com/admob/ios/privacy)
 - The iOS AdMob publisher ID is `pub-5132455808960555`. [Shared app-ads.txt](https://h2qglobal.com/app-ads.txt)
+
+### TwinBeat
+
+- Use `https://madcodelab.github.io/Policy/privacy/twinbeat.html` in App Store Connect and link to it from the game. The iOS bundle ID is `com.h2qglobal.twinbeat`. Complete App Privacy details for the submitted build, including the Google Mobile Ads and User Messaging Platform behavior.
 
 ## AdMob Verification
 
